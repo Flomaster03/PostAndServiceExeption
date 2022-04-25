@@ -24,7 +24,8 @@ data class Post(
     val postponedId: Int,
     val postSource: PostSourse?,
     val geo: Geo?,
-    val copyHistory: Array<Reposts>?
+    val copyHistory: Array<Reposts>?,
+    val attachments: Array<Attachment>?
 ) {
     data class Comments(
         val count: Int,
