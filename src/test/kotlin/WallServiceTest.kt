@@ -34,7 +34,8 @@ class WallServiceTest {
             postSource = Post.PostSourse(type = "vK", platform = "android", data = "like", uRL = "www.odnoklassniki.ru"),
             geo = Post.Geo(tipe = "city", coordinates = "28.432/6543", geoPlace = Post.Geo.Place(
                 id = 56789, title = "Москва", latitude = 45, created = 12092021, icon = "www.cartoons.com", checkins = 5, updated = 22022022, type = 348, country = 0, city = 228, adress = "Россия, Москва, дальше не помню")),
-            copyHistory = arrayOf()
+            copyHistory = arrayOf(),
+            attachments = emptyArray<Attachment>()
         )
         service.add(post)
         val result = service.add(post).id
@@ -73,7 +74,8 @@ class WallServiceTest {
             postSource = Post.PostSourse(type = "vK", platform = "android", data = "like", uRL = "www.odnoklassniki.ru"),
             geo = Post.Geo(tipe = "city", coordinates = "28.432/6543", geoPlace = Post.Geo.Place(
                 id = 56789, title = "Москва", latitude = 45, created = 12092021, icon = "www.cartoons.com", checkins = 5, updated = 22022022, type = 348, country = 0, city = 228, adress = "Россия, Москва, дальше не помню")),
-            copyHistory = arrayOf()
+            copyHistory = arrayOf(),
+            attachments = emptyArray<Attachment>()
         )
         val post2 = Post(
             id = 1,
@@ -102,7 +104,8 @@ class WallServiceTest {
             postSource = Post.PostSourse(type = "vK", platform = "android", data = "like", uRL = "www.odnoklassniki.ru"),
             geo = Post.Geo(tipe = "city", coordinates = "28.432/6543", geoPlace = Post.Geo.Place(
                 id = 56789, title = "Москва", latitude = 45, created = 12092021, icon = "www.cartoons.com", checkins = 5, updated = 22022022, type = 348, country = 0, city = 228, adress = "Россия, Москва, дальше не помню")),
-            copyHistory = arrayOf()
+            copyHistory = arrayOf(),
+            attachments = emptyArray<Attachment>()
         )
         val post3 = Post(
             id = 2,
@@ -131,7 +134,8 @@ class WallServiceTest {
             postSource = Post.PostSourse(type = "vK", platform = "android", data = "like", uRL = "www.odnoklassniki.ru"),
             geo = Post.Geo(tipe = "city", coordinates = "28.432/6543", geoPlace = Post.Geo.Place(
                 id = 56789, title = "Москва", latitude = 45, created = 12092021, icon = "www.cartoons.com", checkins = 5, updated = 22022022, type = 348, country = 0, city = 228, adress = "Россия, Москва, дальше не помню")),
-            copyHistory = arrayOf()
+            copyHistory = arrayOf(),
+            attachments = emptyArray<Attachment>()
         )
         service.add(post1)
         service.add(post2)
@@ -164,7 +168,8 @@ class WallServiceTest {
             postSource = Post.PostSourse(type = "vK", platform = "android", data = "like", uRL = "www.odnoklassniki.ru"),
             geo = Post.Geo(tipe = "city", coordinates = "28.432/6543", geoPlace = Post.Geo.Place(
                 id = 56789, title = "Москва", latitude = 45, created = 12092021, icon = "www.cartoons.com", checkins = 5, updated = 22022022, type = 348, country = 0, city = 228, adress = "Россия, Москва, дальше не помню")),
-            copyHistory = arrayOf()
+            copyHistory = arrayOf(),
+            attachments = emptyArray<Attachment>()
         )
 
         val result = service.update(update)
@@ -201,7 +206,8 @@ class WallServiceTest {
             postSource = Post.PostSourse(type = "vK", platform = "android", data = "like", uRL = "www.odnoklassniki.ru"),
             geo = Post.Geo(tipe = "city", coordinates = "28.432/6543", geoPlace = Post.Geo.Place(
                 id = 56789, title = "Москва", latitude = 45, created = 12092021, icon = "www.cartoons.com", checkins = 5, updated = 22022022, type = 348, country = 0, city = 228, adress = "Россия, Москва, дальше не помню")),
-            copyHistory = arrayOf()
+            copyHistory = arrayOf(),
+            attachments = emptyArray<Attachment>()
         )
         val post2 = Post(
             id = 1,
@@ -230,7 +236,8 @@ class WallServiceTest {
             postSource = Post.PostSourse(type = "vK", platform = "android", data = "like", uRL = "www.odnoklassniki.ru"),
             geo = Post.Geo(tipe = "city", coordinates = "28.432/6543", geoPlace = Post.Geo.Place(
                 id = 56789, title = "Москва", latitude = 45, created = 12092021, icon = "www.cartoons.com", checkins = 5, updated = 22022022, type = 348, country = 0, city = 228, adress = "Россия, Москва, дальше не помню")),
-            copyHistory = arrayOf()
+            copyHistory = arrayOf(),
+            attachments = emptyArray<Attachment>()
         )
         val post3 = Post(
             id = 2,
@@ -259,7 +266,8 @@ class WallServiceTest {
             postSource = Post.PostSourse(type = "vK", platform = "android", data = "like", uRL = "www.odnoklassniki.ru"),
             geo = Post.Geo(tipe = "city", coordinates = "28.432/6543", geoPlace = Post.Geo.Place(
                 id = 56789, title = "Москва", latitude = 45, created = 12092021, icon = "www.cartoons.com", checkins = 5, updated = 22022022, type = 348, country = 0, city = 228, adress = "Россия, Москва, дальше не помню")),
-            copyHistory = arrayOf()
+            copyHistory = arrayOf(),
+            attachments = emptyArray<Attachment>()
         )
         service.add(post1)
         service.add(post2)
@@ -292,7 +300,8 @@ class WallServiceTest {
             postSource = Post.PostSourse(type = "vK", platform = "android", data = "like", uRL = "www.odnoklassniki.ru"),
             geo = Post.Geo(tipe = "city", coordinates = "28.432/6543", geoPlace = Post.Geo.Place(
                 id = 56789, title = "Москва", latitude = 45, created = 12092021, icon = "www.cartoons.com", checkins = 5, updated = 22022022, type = 348, country = 0, city = 228, adress = "Россия, Москва, дальше не помню")),
-            copyHistory = arrayOf()
+            copyHistory = arrayOf(),
+            attachments = emptyArray<Attachment>()
         )
         val result = service.update(update)
         assertFalse(result)

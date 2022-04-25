@@ -24,52 +24,53 @@
 <span class="pc" id="L24">    val postponedId: Int,</span>
 <span class="pc" id="L25">    val postSource: PostSourse?,</span>
 <span class="pc" id="L26">    val geo: Geo?,</span>
-<span class="pc" id="L27">    val copyHistory: Array&lt;Reposts&gt;?</span>
+<span class="pc" id="L27">    val copyHistory: Array&lt;Reposts&gt;?,</span>
+<span class="pc" id="L28">    val attachments: Array&lt;Attachment&gt;?</span>
 ) {
-<span class="fc" id="L29">    data class Comments(</span>
-<span class="pc" id="L30">        val count: Int,</span>
-<span class="pc" id="L31">        val canPost: Boolean,</span>
-<span class="pc" id="L32">        val groupsCanPost: Boolean,</span>
-<span class="pc" id="L33">        val canClose: Boolean,</span>
-<span class="pc" id="L34">        val canOpen: Boolean</span>
+<span class="fc" id="L30">    data class Comments(</span>
+<span class="pc" id="L31">        val count: Int,</span>
+<span class="pc" id="L32">        val canPost: Boolean,</span>
+<span class="pc" id="L33">        val groupsCanPost: Boolean,</span>
+<span class="pc" id="L34">        val canClose: Boolean,</span>
+<span class="pc" id="L35">        val canOpen: Boolean</span>
     )
 
-<span class="fc" id="L37">    data class Reposts(</span>
-<span class="pc" id="L38">        val count: Int,</span>
-<span class="pc" id="L39">        val userReposted: Boolean</span>
+<span class="fc" id="L38">    data class Reposts(</span>
+<span class="pc" id="L39">        val count: Int,</span>
+<span class="pc" id="L40">        val userReposted: Boolean</span>
     )
 
-<span class="fc" id="L42">    data class Likes(</span>
-<span class="pc" id="L43">        val count: Int,</span>
-<span class="pc" id="L44">        val userLikes: Boolean,</span>
-<span class="pc" id="L45">        val canLike: Boolean,</span>
-<span class="pc" id="L46">        val canPublish: Boolean</span>
+<span class="fc" id="L43">    data class Likes(</span>
+<span class="pc" id="L44">        val count: Int,</span>
+<span class="pc" id="L45">        val userLikes: Boolean,</span>
+<span class="pc" id="L46">        val canLike: Boolean,</span>
+<span class="pc" id="L47">        val canPublish: Boolean</span>
     )
 
-<span class="fc" id="L49">    data class PostSourse(</span>
-<span class="pc" id="L50">        val type: String,</span>
-<span class="pc" id="L51">        val platform: String,</span>
-<span class="pc" id="L52">        val data: String,</span>
-<span class="pc" id="L53">        val uRL: String</span>
+<span class="fc" id="L50">    data class PostSourse(</span>
+<span class="pc" id="L51">        val type: String,</span>
+<span class="pc" id="L52">        val platform: String,</span>
+<span class="pc" id="L53">        val data: String,</span>
+<span class="pc" id="L54">        val uRL: String</span>
     )
 
-<span class="fc" id="L56">    data class Geo(</span>
-<span class="pc" id="L57">        val tipe: String,</span>
-<span class="pc" id="L58">        val coordinates: String,</span>
-<span class="pc" id="L59">        val geoPlace: Place</span>
+<span class="fc" id="L57">    data class Geo(</span>
+<span class="pc" id="L58">        val tipe: String,</span>
+<span class="pc" id="L59">        val coordinates: String,</span>
+<span class="pc" id="L60">        val geoPlace: Place</span>
     ) {
-<span class="fc" id="L61">        data class Place(</span>
-<span class="pc" id="L62">            val id: Int,</span>
-<span class="pc" id="L63">            val title: String,</span>
-<span class="pc" id="L64">            val latitude: Int,</span>
-<span class="pc" id="L65">            val created: Int,</span>
-<span class="pc" id="L66">            val icon: String,</span>
-<span class="pc" id="L67">            val checkins: Int,</span>
-<span class="pc" id="L68">            val updated: Int,</span>
-<span class="pc" id="L69">            val type: Int,</span>
-<span class="pc" id="L70">            val country: Int,</span>
-<span class="pc" id="L71">            val city: Int,</span>
-<span class="pc" id="L72">            val adress: String</span>
+<span class="fc" id="L62">        data class Place(</span>
+<span class="pc" id="L63">            val id: Int,</span>
+<span class="pc" id="L64">            val title: String,</span>
+<span class="pc" id="L65">            val latitude: Int,</span>
+<span class="pc" id="L66">            val created: Int,</span>
+<span class="pc" id="L67">            val icon: String,</span>
+<span class="pc" id="L68">            val checkins: Int,</span>
+<span class="pc" id="L69">            val updated: Int,</span>
+<span class="pc" id="L70">            val type: Int,</span>
+<span class="pc" id="L71">            val country: Int,</span>
+<span class="pc" id="L72">            val city: Int,</span>
+<span class="pc" id="L73">            val adress: String</span>
         )
     }
 }
