@@ -6,7 +6,6 @@ class WallService {
         val changeId = if (postsArray.size != 0) postsArray.last().id + 1 else 1
         val postNext = post.copy(id = changeId)
         postsArray += postNext
-
         return postsArray.last()
     }
 

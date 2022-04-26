@@ -25,7 +25,8 @@ data class Post(
     val postSource: PostSourse?,
     val geo: Geo?,
     val copyHistory: Array<Reposts>?,
-    val attachments: Array<Attachment>?
+    val attachments: Array<Attachment>?,
+    val comment: Comment
 ) {
     data class Comments(
         val count: Int,
@@ -73,4 +74,15 @@ data class Post(
             val adress: String
         )
     }
+
+    data class Comment(
+        val ownerId: Int,
+        val postId: Int,
+        val fromGroup: Boolean,
+        val message: String,
+        val replyToComment: Int,
+        val attachments: String,
+        val stickerId: Int,
+        val guid: String
+    )
 }
